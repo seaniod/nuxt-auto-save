@@ -1,23 +1,17 @@
 {
-  "name": "push-with-hook",
-  "displayName": "push-with-hook",
-  "description": "Single button to do a git push with pre-push hook",
-  "version": "0.0.1",
+  "name": "nuxt-auto-save",
+  "displayName": "Nuxt Auto-Save",
+  "description": "Silently auto-saves dirty .nuxt files when opened in VS Code.",
+  "version": "0.0.2",
+  "publisher": "seaniod",  
   "engines": {
     "vscode": "^1.100.0"
   },
-  "categories": [
-    "Other"
-  ],
   "main": "./extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.pushWithHook",
-        "title": "Git: Push with Hook"
-      }
-    ]
-  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {},
   "scripts": {
     "lint": "eslint .",
     "pretest": "pnpm run lint",
